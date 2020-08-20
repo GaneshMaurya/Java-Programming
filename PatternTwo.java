@@ -1,20 +1,17 @@
 import java.util.*;
 
-public class Pattern {
+public class PatternTwo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
 
-        int k;
         for (int i=1; i<=n; i++) {
-            if (i%2 == 1) {
-                k = 1;
-            }
-            else {
-                k = 2;
-            }
-            for (int j=1; j<=i; j++, k+=2) {
+            int k=i;
+            for (int j=1; j<=n; j++) {
                 System.out.print(k + " ");
+                if (k<n) {
+                    k++;
+                }
             }
             System.out.println();
         }
