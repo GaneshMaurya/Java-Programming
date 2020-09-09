@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Arraytwo {
+public class Arraythree {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
@@ -9,17 +9,15 @@ public class Arraytwo {
         for (int i=0; i<n; i++){
             a[i] = input.nextInt();
         }
-
-        int e = input.nextInt();
         input.close();
 
-        int count = 0;
+        int max = a[0];
 
         for (int i=0; i<n; i++){
-            if (a[i] == e) {
-                count = count + 1;
+            if (a[i] > max) {
+                max = a[i];
             }
         }
-        System.out.println(count);
+        System.out.println(max);
     }
 }
