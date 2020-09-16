@@ -8,7 +8,6 @@ public class Regexfour {
 
         Pattern pattern = Pattern.compile(str);
         Matcher matcher = pattern.matcher(text);
-
         
         boolean matches = matcher.matches();
         System.out.println(matches);
