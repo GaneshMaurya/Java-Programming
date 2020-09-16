@@ -4,7 +4,7 @@ public class HotelRent {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int m = input.nextInt();
-        float r = input.nextInt();
+        float r = input.nextFloat();
         int d = input.nextInt();
         input.close();
 
