@@ -16,5 +16,6 @@ public class Garden {
         {
             System.out.print("No");
         }
+        System.out.print(x + y);
     }
 }
